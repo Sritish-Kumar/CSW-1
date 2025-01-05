@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#item1").parent().css({
+                backgroundColor: "red",
+                color: "red",
+                border: "2px solid black"
+            });
+            $("#item1").parents().css({
+                backgroundColor: "aqua",
+                color: "blue",
+                border: "2px solid black"
+            });
+            $("#main").children().css("fontSize", "15px")
+        })
+    </script>
+</head>
+
+<body>
+    <ul id="main">
+        <li>Item 1
+            <ul>
+                <li id="item1">Subitem 1</li>
+                <li>Subitem 2</li>
+                <li>Subitem 3</li>
+            </ul>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>

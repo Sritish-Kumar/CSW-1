@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q13</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="read">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, at.</p>
+    <p id="change">Lorem ipsum dolor sit amet.</p>
+    <button>click</button>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(() => {
+                alert($('#read').text());
+
+                $('#change').html("Changed Content<b> Test </b>");
+
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>

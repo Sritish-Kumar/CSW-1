@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#getValue").click(function () {
+                alert($("input").val());
+            })
+            $("#setValue").click(function () {
+                $("input").val(prompt("Enter text to set"))
+            })
+            $("#displayPara").click(function () {
+                alert($("#p1").text());
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name">
+    </form>
+    <p id="p1">This is a paragraph which appears after clicking on Display Paragraph button.</p>
+    <button id="getValue">Get Value</button>
+    <button id="setValue">Set Value</button>
+    <button id="displayPara">Display Paragraph</button>
+
+</body>
+
+</html>

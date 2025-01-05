@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            float: right;
+            display: inline;
+            padding: 7px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2rem;
+
+        }
+
+        .products ul {
+            display: none;
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        .electro ul {
+            display: none;
+        }
+
+        .products:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="main">Home</div>
+        <div class="main products">Products
+            <div class="products">
+                <ul>
+                    <li class="electro">Electronics
+                        <ul>
+                            <li>Laptops</li>
+                            <li>Tv</li>
+                            <li>Mobile</li>
+                        </ul>
+                    </li>
+                    <li>Fashion</li>
+                    <li>Books</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">Services</div>
+        <div class="main">Contatcs</div>
+    </div>
+</body>
+
+</html>

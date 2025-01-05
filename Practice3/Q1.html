@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+
+    <style>
+        p {
+            padding: 5px;
+            border: 1px solid green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button>Change</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt error sit nihil rerum reiciendis
+        quisquam! Dolorem culpa, quibusdam odit dicta similique autem ipsa illum dolor vitae ipsum ullam expedita!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, reiciendis.</p>
+
+    <script>
+        $('button').click(() => {
+            $('p').css({ "background-color": "blue", "color": "white" })
+        })
+
+        $('button').dblclick(() => {
+            $('p').css({ "background-color": "white", "color": "black" })
+        })
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <button>click</button>
+
+    <div>
+        <p>Paragraph Element</p>
+        <b>Testing</b>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(() => {
+                console.log($('div').html());
+                $('div').html("<p>Modified Paragraph Element</p><b>ModifiedTesting</b>")
+            })
+        })
+    </script>
+
+</body>
+
+</html>
